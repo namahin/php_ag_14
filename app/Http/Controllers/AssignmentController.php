@@ -75,6 +75,7 @@ class AssignmentController extends Controller
         }
 
         return response()->json([
+            'email' => $email,
             'success' => true,
             'message' => 'Form submitted successfully.'
         ]);
