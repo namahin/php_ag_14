@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 
 //Question 1
-Route::get('/question1', [AssignmentController::class, 'Question1']);
+Route::post('/question1', [AssignmentController::class, 'Question1']);
 
 
 //Question 2
@@ -37,3 +37,11 @@ Route::get('/question4', [AssignmentController::class, 'Question4']);
 
 //Question 5
 Route::get('/question5', [AssignmentController::class, 'Question5']);
+
+
+//Question 6
+Route::get('/question6', [AssignmentController::class, 'Question6']);
+
+
+//Question 7
+Route::post('/submit', [AssignmentController::class, 'Question7']);
